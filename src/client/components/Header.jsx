@@ -13,7 +13,7 @@ function Header() {
     <>
       <header className="w-full shadow-sm sticky top-0 bg-white z-50">
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 py-6">
-        <img src={logo} alt="" />
+        <img src={logo} alt="" className="h-12 w-36" />
 
           {/* Nav Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm">
