@@ -74,9 +74,9 @@ function Home() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="absolute top-full left-0 w-full bg-white shadow-md py-4 px-6 flex flex-col gap-4 md:hidden z-10">
-            <a href="/">Lorem Ipsum</a>
-            <a href="/lorem">Lorem Ipsum</a>
-            <a href="/lorem">Lorem Ipsum</a>
+            <a href="/ecom">Ecom</a>
+            <a href="/architectdashboard">Architect Dashboard</a>
+            <a href="/vendordashboard">Vendor Dashbord</a>
             <a href="/lorem">Lorem Ipsum</a>
             <div className="flex flex-col gap-2">
               <input
