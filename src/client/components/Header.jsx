@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiMenu, FiX, FiUser, FiHeart, FiShoppingCart } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import Cart from "./Cart";
+import logo from '../../Admin/images/logo.jpg'
 
 function Header() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function Header() {
     <>
       <header className="w-full shadow-sm sticky top-0 bg-white z-50">
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 py-6">
-          <div className="text-2xl font-bold">Logo</div>
+        <img src={logo} alt="" />
 
           {/* Nav Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm">
