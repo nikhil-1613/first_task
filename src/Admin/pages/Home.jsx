@@ -8,6 +8,7 @@ import pink_shirt from "../images/pink_shirt.png";
 import blue_shirt from "../images/blueshirt.png";
 import yellow_pant from "../images/yellow_pant.png";
 import girl from "../images/girl.png";
+import logo from '../images/logo.jpg'
 import support from "../images/support.svg";
 import {
   FaFileAlt,
@@ -35,13 +36,13 @@ function Home() {
     <div className="bg-white min-h-screen font-montreal">
       {/* Header */}
       <header className="flex justify-between items-center px-6 py-6 shadow-sm relative">
-        <div className="text-blue-600 font-bold text-xl">LOGO</div>
+        <div><img className="h-10 w-20" src={logo} alt="" /></div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-gray-700">
-          <a href="/lorem">Lorem Ipsum</a>
-          <a href="/lorem">Lorem Ipsum</a>
-          <a href="lorem">Lorem Ipsum</a>
+          <a href="/ecom">Ecom</a>
+          <a href="/architectdashboard">architect dashbaord</a>
+          <a href="/vendordashboard">Vendor dashbaord</a>
           <a href="lorem">Lorem Ipsum</a>
         </nav>
 
