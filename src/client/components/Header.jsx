@@ -6,7 +6,7 @@ import Cart from "./Cart";
 function Header() {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(false); 
+  const [cartOpen, setCartOpen] = useState(false);
 
   return (
     <>
@@ -24,13 +24,25 @@ function Header() {
 
           {/* Icons */}
           <div className="hidden md:flex items-center gap-5 text-xl">
-            <FiUser className="cursor-pointer" onClick={() => navigate("/userprofile")} />
-            <FiHeart className="cursor-pointer" onClick={() => navigate("/favourites")} />
-            <FiShoppingCart className="cursor-pointer" onClick={() => setCartOpen(true)} />
+            <FiUser
+              className="cursor-pointer"
+              onClick={() => navigate("/userprofile")}
+            />
+            <FiHeart
+              className="cursor-pointer"
+              onClick={() => navigate("/favourites")}
+            />
+            <FiShoppingCart
+              className="cursor-pointer"
+              onClick={() => setCartOpen(true)}
+            />
           </div>
 
           {/* Hamburger Menu */}
-          <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-2xl"
+          >
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
@@ -38,10 +50,18 @@ function Header() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden px-6 pb-4 space-y-2 text-sm">
-            <a href="/ecom" className="block">Home</a>
-            <a href="/shop" className="block">Shop</a>
-            <a href="/about" className="block">About</a>
-            <a href="/contact" className="block">Contact</a>
+            <a href="/ecom" className="block">
+              Home
+            </a>
+            <a href="/shop" className="block">
+              Shop
+            </a>
+            <a href="/about" className="block">
+              About
+            </a>
+            <a href="/contact" className="block">
+              Contact
+            </a>
             <div className="flex gap-4 pt-2 text-xl">
               <FiUser />
               <FiHeart />

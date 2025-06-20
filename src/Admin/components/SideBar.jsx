@@ -2,7 +2,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {
-  FaTasks,
+  // FaTasks,
   FaUserFriends,
   FaComments,
   FaFileAlt,
@@ -10,13 +10,15 @@ import {
   FaClipboardList,
   FaIdBadge,
   FaThLarge,
+FaProjectDiagram 
 } from "react-icons/fa";
 import { IoIosSettings } from "react-icons/io";
 
 // Store the icon component, not the element
 const menuItems = [
   { name: "Dashboard", icon: FaThLarge, path: "/dashboard" },
-  { name: "Task Management", icon: FaTasks, path: "/task" },
+  // { name: "Task Management", icon: FaTasks, path: "/task" },
+   {name: "Project Management", icon:FaProjectDiagram, path:"/projects"},
   { name: "Lead Management", icon: FaUserFriends, path: "/leadmanagement" },
   { name: "Client Communication", icon: FaComments, path: "/client" },
   { name: "Document Storage", icon: FaFileAlt, path: "/documents" },
@@ -24,6 +26,7 @@ const menuItems = [
   { name: "Attendance", icon: FaClipboardList, path: "/attendance" },
   { name: "Customer Detail", icon: FaIdBadge, path: "/customers" },
    { name: "Settings", icon: IoIosSettings, path: "/settings" },
+  
 ];
 
 const SideBar = ({ toggleSidebar }) => {

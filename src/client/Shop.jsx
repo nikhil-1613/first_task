@@ -14,7 +14,6 @@ function Shop() {
         className="h-[250px] w-full bg-center bg-cover flex flex-col justify-center items-center text-center text-black opacity-50"
         style={{
           backgroundImage: `url(${bannerImage})`,
-         
         }}
       >
         <h1 className="text-3xl font-bold text-black">Shop</h1>

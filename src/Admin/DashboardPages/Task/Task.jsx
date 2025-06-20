@@ -13,6 +13,7 @@ const Task = () => {
     id: i + 1,
     roomId: 100 + (i % 5),
     roomType: "Living room",
+    assignedTo: "Bob",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaUHsPZUE06fBao0uCgqqyWPzD2X5K20HQsg&s",
     description: "Lorem Ipsum is simply dummy text of the printing industry.",
@@ -96,6 +97,7 @@ const Task = () => {
                   <tr>
                     <th className="p-2 border">Room ID</th>
                     <th className="p-2 border">Room Type</th>
+                    <th className="p-2 border">Assigned To</th>
                     <th className="p-2 border">Image</th>
                     <th className="p-2 border">Room Description</th>
                     <th className="p-2 border">Work Done</th>
@@ -109,6 +111,7 @@ const Task = () => {
                     <tr key={row.id} className="hover:bg-gray-50">
                       <td className="p-2 border">{row.roomId}</td>
                       <td className="p-2 border">{row.roomType}</td>
+                      <td className="p-2 border">{row.assignedTo}</td>
                       <td className="p-2 border">
                         <img
                           src={row.image}

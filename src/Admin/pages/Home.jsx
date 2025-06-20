@@ -24,6 +24,8 @@ import {
   FaAndroid,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import CategoryBar from "../../client/components/CategoryBar";
+import SuggestionCategory from "../components/SuggestionCategory";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,7 +94,7 @@ function Home() {
           </div>
         )}
       </header>
-
+        <CategoryBar/>
       {/* Hero Section */}
       <div className="flex items-center justify-center px-4 py-12">
         <div
@@ -147,7 +149,8 @@ function Home() {
           </div>
         </div>
       </div>
-
+        {/* Suggestion-section */}
+        <SuggestionCategory/>
       {/* Review Section */}
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-2xl font-bold text-gray-800 mb-2">
